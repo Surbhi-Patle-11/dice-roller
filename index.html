@@ -11,15 +11,63 @@
        <img src="./images/dicecs-icon.png" height="55px"><br>
        <span class="heading">  Dice Roller</span><br>
         <span>Roll the dice and test your luck!!</span><br><br>
-        <img src="./images/dice-1.svg" height="150px" id="img1">
-        <img src="./images/dice-3.svg" height="150px" id="img2"><br><br>
-        <button>Roll dice!!</button>
+        <img src="./images/dice-1.svg" height="150px" id="dice1">
+        <img src="./images/dice-3.svg" height="150px" id="dice2"><br><br>
+        <button type="button" onclick="rolldice()">Roll dice!!</button>
 <br><br>
     </div>
     <script>
-        const roll1 =document.getElementById("img1");
-        const roll2 =document.getElementById("img2");
-        console.log(roll1);
+        const diceimg1 =document.getElementById("dice1");
+        const diceimg2 =document.getElementById("dice2");
+       
+        function rolldice(){
+
+            min =1;
+            max=7;
+
+            const randomnum1 =Math.floor(Math.random() * (max - min) + min);
+            const randomnum2 =Math.floor(Math.random() * (max -min) +min);
+
+            if(randomnum1 ===1){
+                diceimg1.src ="./images/dice-1.svg"
+            }
+            else if(randomnum1 === 2){
+                diceimg1.src ="./images/dice-2.svg"
+            }
+            else if(randomnum1 === 3){
+                diceimg1.src = "./images/dice-3.svg"
+            }
+            else if (randomnum1 === 4){
+                diceimg1.src ="./images/dice-4.svg"
+            }
+            else if(randomnum1 === 5){
+                diceimg1.src ="./images/dice-5.svg"
+            }
+            else {
+                diceimg1.src ="./images/dice-6.svg"
+            }
+
+
+            if(randomnum2 ===1){
+                diceimg2.src ="./images/dice-1.svg"
+            }
+            else if(randomnum2 === 2){
+                diceimg2.src ="./images/dice-2.svg"
+            }
+            else if(randomnum2 === 3){
+                diceimg2.src = "./images/dice-3.svg"
+            }
+            else if (randomnum2 === 4){
+                diceimg2.src ="./images/dice-4.svg"
+            }
+            else if(randomnum2 === 5){
+                diceimg2.src ="./images/dice-5.svg"
+            }
+            else {
+                diceimg2.src ="./images/dice-6.svg"
+            }
+
+        }
         
     </script>
 </body>
