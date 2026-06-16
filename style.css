@@ -1,18 +1,60 @@
 .main-box{
     
 
-   
-    
+   height: 420px;
+   width:600px;
+   margin: 0 auto;
+   padding: 10px;
+    margin-top: 30px;
     text-align: center;
+    background-color: rgb(107, 127, 145);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 9px white;
    
    
 }
 body{
-   
+   background-color: rgb(71, 66, 66);
 }
 .heading{
   
    font-size: 60px;
    margin-top:0px;
   
+}
+
+button{
+    
+    border: 2px solid black;
+   
+    cursor: pointer;
+    background-color: bisque;
+    margin-top: 6px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    
+}
+button:hover{
+    background-color: rgb(234, 148, 20);
+}
+
+.roll{
+    animation: rolldice 0.8s ease;
+}
+
+@keyframes rolldice{
+   0% {
+    transform: rotate(deg);
+
+    }
+
+    50%{
+        transform: rotate(180deg) scale(1);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
