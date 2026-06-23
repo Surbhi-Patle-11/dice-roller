@@ -32,20 +32,12 @@
             diceimg2.classList.add("roll");
 
             setTimeout(() => {
-               const min = 1;
-               const max = 7;
-                const randomnum1 = Math.floor(Math.random() *  (max-min)+ min);
+                const min = 1;
+                const max = 7;
+                const randomnum1 = Math.floor(Math.random() * (max - min) + min);
                 const randomnum2 = Math.floor(Math.random() * (max - min) + min);
 
                 total.innerText = "Total:" + (randomnum1 + randomnum2);
-                
-console.log(randomnum1+randomnum2);
-console.log("diceimg1",randomnum1);
-
-
-
-
-
 
 
                 if (randomnum1 === 1) {
