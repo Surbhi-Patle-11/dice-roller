@@ -1,26 +1,31 @@
 .main-box{
     
 
-   height: 420px;
-   width:600px;
+  
+   width:550px;
    margin: 0 auto;
-   padding: 10px;
-    margin-top: 30px;
+   padding: 30px;
+    margin-top: 150px;
     text-align: center;
-    background-color: rgb(107, 127, 145);
+    background-color: rgba(255,255,0.1);
+    backdrop-filter: blur(10px);
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 2px 3px 9px white;
+    box-shadow: 0 0 40px rgba(248, 245, 245, 0.7);
    
    
 }
 body{
-   background-color: rgb(71, 66, 66);
+   background:linear-gradient(135deg,#243b55);
+   min-width: 100vh;
+   
 }
 .heading{
   
-   font-size: 60px;
+   font-size: 55px;
    margin-top:0px;
+ 
+   font-weight: bold;
   
 }
 
@@ -29,16 +34,19 @@ button{
     border: 2px solid black;
    
     cursor: pointer;
-    background-color: bisque;
+    background:linear-gradient(90deg,#abd14b,#4a00e0);
     margin-top: 6px;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 25px;
+    
+    color: white;
     
     
 }
 button:hover{
-    background-color: rgb(234, 148, 20);
+    transform: translate(3px);
+    background:linear-gradient(90deg,#792a64,#efb237); ;
 }
 
 .roll{
@@ -52,7 +60,7 @@ button:hover{
     }
 
     50%{
-        transform: rotate(180deg) scale(1);
+        transform: rotate(180deg) scale(1.2);
     }
     100%{
         transform: rotate(360deg);
